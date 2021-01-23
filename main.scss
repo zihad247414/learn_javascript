@@ -1,0 +1,75 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #04475c;
+    color: #8b4444;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 2.65rem;
+    text-align: center;
+}
+
+
+// * Day 2 Style
+.profile-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 425px;
+    position: relative;
+
+    .profile-pic{
+        background-color: teal;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        animation: dropdown 1.2s infinite linear alternate-reverse;
+        position: absolute;
+        transform: translateY(-50%);
+
+        #head{
+            color: #fff;
+            font-size: 4.6875rem;
+            font-weight: 300;
+        }
+    }
+    @keyframes dropdown {
+        0%{
+            top: 0%;
+        }
+        25%{
+            top: 2%;
+        }
+        50%{
+            top: 3%;
+        }
+        75%{
+            top: 4%;
+        }
+        100%{
+            top: 10%;
+        }
+    }
+    span#fullname{
+        color: #fff;
+        font-size: 3.125rem;
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
+// ! Day 3 end here
