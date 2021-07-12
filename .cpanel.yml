@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/techv931/demo.bestreviewer.net/
+    - /bin/cp * $DEPLOYPATH
